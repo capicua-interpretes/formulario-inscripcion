@@ -284,6 +284,32 @@ input[type="checkbox"]:checked::after {
   transform: translate(-50%, -50%);
 }
 
+/* --- RGPD --- */
+.rgpd {
+  margin: 1.5em 0 2em 0;
+}
+
+.rgpd .checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6em;
+  font-family: 'Barlow', sans-serif;
+}
+
+.rgpd input[type="checkbox"] {
+  margin-top: 0.2em;
+}
+
+.rgpd label {
+  font-size: 0.95em;
+  font-weight: 300;
+  color: #464646;
+  line-height: 1.4;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+
 @media screen and (max-width: 1024px) {
   .form-container {
     padding: 3em 2em;
