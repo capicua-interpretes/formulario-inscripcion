@@ -239,74 +239,45 @@ button[type="submit"]:hover {
   background-color: #228a8a;
 }
 
-.checkbox-option {
+/* --- CHECKBOX (GLOBAL) --- */
+.checkbox {
   display: flex;
-  align-items: center;
-  gap: 0.5em;
-  margin-bottom: 0.5em;
+  align-items: flex-start;
+  gap: 0.7em;
   font-family: 'Barlow', sans-serif;
 }
 
-.checkbox-option label {
-  cursor: pointer;
-  color: #464646;
+.checkbox input {
+  margin-top: 0.3em;
+}
+
+/* Texto del checkbox */
+.checkbox label {
+  font-size: 0.95em;
   font-weight: 300;
-  font-size: 1em;
+  color: #464646;
+  line-height: 1.4;
+  cursor: pointer;
   margin-bottom: 0;
 }
 
-input[type="checkbox"] {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  width: 15px;
-  height: 15px;
-  border: 1.5px solid #464646;
-  border-radius: 2px;
-  cursor: pointer;
-  position: relative;
-  background-color: transparent;
-  transition: all 0.2s ease-in-out;
+/* --- CHECKBOX GRID --- */
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.4em 1.5em;
 }
 
-input[type="checkbox"]:checked {
-  background-color: #2badba;
-  border-color: #2badba;
-}
-
-input[type="checkbox"]:checked::after {
-  content: '✔';
-  color: white;
-  font-size: 12px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .checkbox-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* --- RGPD --- */
 .rgpd {
   margin: 1.5em 0 2em 0;
-}
-
-.rgpd .checkbox {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.6em;
-  font-family: 'Barlow', sans-serif;
-}
-
-.rgpd input[type="checkbox"] {
-  margin-top: 0.2em;
-}
-
-.rgpd label {
-  font-size: 0.95em;
-  font-weight: 300;
-  color: #464646;
-  line-height: 1.4;
-  margin-bottom: 0;
-  cursor: pointer;
 }
 
 
